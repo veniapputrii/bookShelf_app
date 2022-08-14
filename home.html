@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name ="img" content="avatar.svg">
+        <title >Rak Buku Navia</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class ="container">
+            <header>
+                <nav> 
+                    <h1> BookShelf Apps</h1>
+                </nav>
+            </header>
+            <div class="container">
+                <main>
+                    <div id="isi"> 
+                        <article id="add-book"class ="card"> 
+                            <h2> Masukkan Buku Baru</h2>
+                            <form id="inputBuku">
+                                <div class="input">
+                                    <label for="inputJudulBuku"> Judul Buku </label>
+                                    <input id="inputJudulBuku" type="text" required>
+                                </div>
+                                <div class ="input">
+                                    <label for="inputNamaPenulis">Penulis</label>
+                                    <input id="inputNamaPenulis" type="text" required>
+                                </div>
+                                <div class = "input">
+                                    <label for="inputTahun">Tahun</label>
+                                    <input id="inputTahun" type="number" required>
+                                </div>
+                                <section>
+                                    <button id="SubmitUncomplated" class="button1" type="submit">Belum Selesai di Baca</button>
+                                </section>
+                                
+                            </form>
+                        </article>
+
+                        <div id ="content">
+                            <article class="card_one">
+                                <h3 >Belum selesai dibaca</h3>
+                                <div class ="list-item" id="books">
+                            
+                                </div>
+                            </article>
+                            
+                            <article class="card_two"> 
+                                <h3>Selesai di baca</h3>
+                                <div id = "readed" class = "list-item">
+                            
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                                         
+                        <aside>
+                            <article class="sapa card">
+                                <img src="avatar.svg">
+                                <h4> Halo, Navia!</h4>
+                                <p>Sudah baca buku apa hari ini?</p> 
+                            </article>
+                            <article class ="card">
+                                <h4>Cari Daftar Buku</h4>
+                                <form id="searchBook">
+                                    <input id="searchBookTitle" type="text" name="searchBar" placeholder="ketik judul buku">
+                                    <button class="searchBook" id="searchSubmit" type="submit">Cari</button>
+                                  </form>
+                                </div>
+
+                                </div>
+                            </article>
+                        </aside>
+                    
+                </main>
+            </div>
+            <footer>
+                &copy; 2022, Tugas Dicoding
+                <script src="main.js"></script>
+            </footer>
+    </body>
+</html>
